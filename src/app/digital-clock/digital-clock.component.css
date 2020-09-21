@@ -1,0 +1,40 @@
+:host {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  width: 100vw;
+  background-color: whitesmoke;
+}
+
+.digitalClock {
+  position: relative;
+  width: 300px;
+  height: 130px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: white;
+  border: 3px solid;
+  font-size: 26px;
+}
+
+.digitalTime {
+  display: flex;
+}
+
+.ampm {
+  margin-top: 10px;
+  font-size: 12px;
+}
+.london {
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+input {
+  size: 2px;
+  border-style: none;
+  text-align: center;
+}

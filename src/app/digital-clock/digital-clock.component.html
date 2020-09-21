@@ -1,0 +1,47 @@
+<div id="border" class="digitalClock">
+  <h1 class="london">London Clock</h1>
+  <div class="digitalTime">
+    <input
+      size="2"
+      type="text"
+      class="inputFileds"
+      [value]="hourString"
+      (click)="clickToStop()"
+      (keydown.enter)="saveHour($event)"
+    />
+    <span>:</span>
+    <input
+      size="2"
+      type="text"
+      class="inputFileds"
+      [value]="minuteString"
+      (click)="clickToStop()"
+      (keydown.enter)="saveMinute($event)"
+    />
+    <span>:</span>
+    <input
+      size="2"
+      type="text"
+      class="inputFileds"
+      [value]="secondString"
+      (click)="clickToStop()"
+      (keydown.enter)="saveSecond($event)"
+    />
+    <span>:</span>
+    <input
+      size="2"
+      type="text"
+      class="inputFileds"
+      (click)="clickToStop()"
+      [value]="ampmString"
+      (keydown.enter)="saveAmpm($event)"
+    />
+    <!--
+    <div>{{ hourString }} : &nbsp;</div>
+    <div>{{ minuteString }}: &nbsp;</div>
+    <div>{{ secondString }}: &nbsp;</div>
+    
+    <div class="ampm">{{ ampmString }}</div>
+    -->
+  </div>
+</div>
